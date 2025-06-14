@@ -67,60 +67,60 @@ const ProductForm = ({ onSuccess }: ProductFormProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-8 rounded-2xl shadow-xl max-w-xl w-full space-y-6">
-    <h2 className="text-2xl font-bold text-gray-900">Crear nuevo producto</h2>
+    <form onSubmit={handleSubmit} className="bg-purple-900 p-8 rounded-2xl shadow-xl max-w-xl w-full space-y-6">
+    <h2 className="text-2xl font-bold text-black">Crear nuevo producto</h2>
 
     {error && <p className="text-red-600 text-sm font-medium">{error}</p>}
 
     <div>
-        <label className="block text-sm font-medium text-gray-800 mb-1">Nombre</label>
+        <label className="block text-sm font-medium text-black mb-1">Nombre</label>
         <input
         type="text"
         placeholder="Nombre del producto"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        className="w-full px-4 py-2 border border-gray-400 rounded-lg bg-gray-50 text-gray-900 placeholder-gray-500 shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        className="w-full px-4 py-2 border border-gray-400 rounded-lg bg-gray-50 text-black placeholder-gray-500 shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
         required
         />
     </div>
 
     <div>
-        <label className="block text-sm font-medium text-gray-800 mb-1">Descripción</label>
+        <label className="block text-sm font-medium text-black mb-1">Descripción</label>
         <textarea
         placeholder="Descripción breve del producto"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         rows={3}
-        className="w-full px-4 py-2 border border-gray-400 rounded-lg bg-gray-50 text-gray-900 placeholder-gray-500 shadow-sm resize-none focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        className="w-full px-4 py-2 border border-gray-400 rounded-lg bg-gray-50 text-black placeholder-gray-500 shadow-sm resize-none focus:ring-2 focus:ring-blue-500 focus:outline-none"
         />
     </div>
 
     <div>
-        <label className="block text-sm font-medium text-gray-800 mb-1">Precio</label>
+        <label className="block text-sm font-medium text-black mb-1">Precio</label>
         <input
         type="number"
         placeholder="$0.00"
         value={price}
         onChange={(e) => setPrice(e.target.value)}
-        className="w-full px-4 py-2 border border-gray-400 rounded-lg bg-gray-50 text-gray-900 placeholder-gray-500 shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        className="w-full px-4 py-2 border border-gray-400 rounded-lg bg-gray-50 text-black placeholder-gray-500 shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
         required
         />
     </div>
 
     <div>
-        <label className="block text-sm font-medium text-gray-800 mb-1">Imagen</label>
+        <label className="block text-sm font-medium text-black mb-1">Imagen</label>
         <input
         type="file"
         accept="image/*"
         onChange={(e) => setImage(e.target.files?.[0] || null)}
-        className="w-full text-gray-700 bg-gray-50 border border-gray-400 rounded-lg px-3 py-2 shadow-sm file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 transition"
+        className="w-full text-gray-700 bg-gray-50 border border-gray-400 rounded-lg px-3 py-2 shadow-sm file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-green-600 file:text-white hover:file:bg-green-900 transition"
         required
         />
     </div>
 
     <button
         type="submit"
-        className="w-full bg-blue-600 text-white py-2 rounded-lg font-medium shadow hover:bg-blue-700 transition"
+        className="w-full bg-green-600 text-white py-2 rounded-lg font-medium shadow hover:bg-green-900 transition"
     >
         Guardar producto
     </button>

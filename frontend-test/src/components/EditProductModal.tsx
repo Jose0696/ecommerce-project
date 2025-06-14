@@ -80,7 +80,7 @@ const EditProductModal = ({ product, onSuccess }: Props) => {
 
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-40 flex items-center justify-center">
-          <div className="bg-white p-6 rounded shadow-md w-full max-w-xl relative">
+          <div className="bg-gray-700 p-6 rounded shadow-md w-full max-w-xl relative">
             <button
               onClick={() => setIsOpen(false)}
               className="absolute top-2 right-2 text-gray-500 hover:text-red-600"
@@ -88,7 +88,7 @@ const EditProductModal = ({ product, onSuccess }: Props) => {
               ✕
             </button>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Editar producto</h2>
+            <h2 className="text-2xl font-bold text-black mb-6">Editar producto</h2>
 
             {error && <p className="text-red-500 mb-4">{error}</p>}
 

@@ -22,7 +22,7 @@ const ProductModal = () => {
 
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-40 z-50 flex items-center justify-center">
-          <div className="bg-white rounded-lg p-6 shadow-lg w-full max-w-xl relative">
+          <div className="bg-gray-700 rounded-lg p-6 shadow-lg w-full max-w-xl relative">
             <button
               onClick={toggleModal}
               className="absolute top-2 right-2 text-gray-500 hover:text-red-600 text-xl"

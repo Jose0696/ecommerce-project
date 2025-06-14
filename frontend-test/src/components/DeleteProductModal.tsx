@@ -63,15 +63,15 @@ const DeleteProductModal = ({ product, onSuccess }: Props) => {
 
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-40 flex items-center justify-center">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative">
+          <div className="bg-gray-700 p-6 rounded-lg shadow-lg max-w-md w-full relative">
             <button
               onClick={() => setIsOpen(false)}
               className="absolute top-2 right-2 text-gray-400 hover:text-red-600"
             >
               ✕
             </button>
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">¿Eliminar producto?</h2>
-            <p className="mb-4 text-gray-900">
+            <h2 className="text-2xl font-bold text-black mb-6">¿Eliminar producto?</h2>
+            <p className="mb-4 text-black">
               ¿Estás seguro que deseas eliminar <strong>{product.name}</strong>?
             </p>
 
@@ -80,7 +80,7 @@ const DeleteProductModal = ({ product, onSuccess }: Props) => {
             <div className="flex justify-end gap-4">
               <button
                 onClick={() => setIsOpen(false)}
-                className="px-4 py-2 rounded-lg border border-gray-300 text-gray-700 bg-white hover:bg-gray-100 shadow-sm transition-colors duration-150"
+                className="px-4 py-2 rounded-lg border border-gray-300 text-black bg-gray-400 hover:bg-gray-500 shadow-sm transition-colors duration-150"
               >
                 Cancelar
               </button>
