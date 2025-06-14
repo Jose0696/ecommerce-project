@@ -1,26 +1,29 @@
-# Ecommerce Full Stack App
+# 🛒 Ecommerce Full Stack App
 
-Proyecto para una plataforma e-commerce desarrollado con Next.js, Express, MySql y CloudDinary.
+Plataforma de comercio electrónico desarrollada con **Next.js**, **Express**, **MySQL** y **Cloudinary**.
 
-## Tecnologías
-- Next.js + TailwindCSS
-- Node.js + Express
-- MySQL en clever cloud
-- CloudDinary persistencia de imagenes 
-- JWT para autenticación
-- React Context API para estado global
+El backend está desplegado en **Render**, mientras que el frontend se encuentra alojado en **Vercel**.
 
-## Instrucciones
+👉 Puedes acceder al proyecto aquí:  
+🔗 [https://ecommerce-project-red-psi.vercel.app/](https://ecommerce-project-red-psi.vercel.app/)
+
+---
+
+## 🚀 Tecnologías Utilizadas
+
+- **Frontend:** Next.js + Tailwind CSS  
+- **Backend:** Node.js + Express  
+- **Base de datos:** MySQL (Clever Cloud)  
+- **Almacenamiento de imágenes:** Cloudinary  
+- **Autenticación:** JSON Web Tokens (JWT)  
+- **Manejo de estado:** React Context API  
+
+---
+
+## 🧪 Instrucciones para Ejecutar el Proyecto
 
 ### Backend
 ```bash
 cd backend
-node server.js
-```
-
-### Frontend
-```bash
-cd frontend
 npm install
-npm run dev
-
+node server.js
