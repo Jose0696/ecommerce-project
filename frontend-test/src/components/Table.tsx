@@ -26,8 +26,8 @@ const Table = () => {
   const itemsPerPage = 10;
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      const res = await fetch('http://localhost:3001/api/products');
+    const fetchProducts = async () => { 
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`);
       const data = await res.json();
       setProducts(data);
       setFiltered(data);

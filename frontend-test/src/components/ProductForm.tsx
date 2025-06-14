@@ -33,7 +33,7 @@ const ProductForm = ({ onSuccess }: ProductFormProps) => {
       formData.append('price', price);
       formData.append('image', image);
 
-      const res = await fetch('http://localhost:3001/api/products', {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`, {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,

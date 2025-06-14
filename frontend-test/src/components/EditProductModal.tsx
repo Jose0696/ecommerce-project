@@ -39,7 +39,7 @@ const EditProductModal = ({ product, onSuccess }: Props) => {
       formData.append('price', price);
       if (image) formData.append('image', image);
 
-      const res = await fetch(`http://localhost:3001/api/products/${product.id}`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products/${product.id}`, {
         method: 'PUT',
         headers: {
           Authorization: `Bearer ${token}`,
