@@ -8,6 +8,11 @@ El backend está desplegado en **Render**, mientras que el frontend se encuentra
 🔗 [https://ecommerce-project-red-psi.vercel.app/](https://ecommerce-project-red-psi.vercel.app/)
 
 ---
+Favor para acceder a la cuenta administrador favor de colocar:
+
+correo: admin@gmail.com
+password: admin
+---
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -27,3 +32,15 @@ El backend está desplegado en **Render**, mientras que el frontend se encuentra
 cd backend
 npm install
 node server.js
+
+```
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+## Deploy
+```bash
+npm run build
+npm run start 
